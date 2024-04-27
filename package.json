@@ -1,0 +1,29 @@
+{
+  "name": "ts-express-template",
+  "version": "0.1.0",
+  "description": "使用 rollup 和 typescript 构建的 express 项目模板",
+  "main": "dist/bundle.js",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "start": "nodemon dist/bundle.js"
+  },
+  "author": "frostime",
+  "license": "AGPL-3.0-only",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/express": "^4.17.21",
+    "nodemon": "^3.1.0",
+    "rollup": "^4.16.4",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
